@@ -1,10 +1,19 @@
 body{
-  background: #10a7e8;
+  background-color: #10a7e8;
   font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: #000;
+    position: relative;
+   
+}
+.background{
+  background-image: url("/img/background-mob.png");
+  background-repeat: no-repeat;
+  background-position: top -450px center;
+    background-size: 100%;
+
 }
 h2{
   font-family: "Potta One", sans-serif;
