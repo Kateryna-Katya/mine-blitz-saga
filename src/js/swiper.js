@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 spaceBetween: 24,
             },
         },
+  
+        loop: true,
         slideClass: 'gallery-swiper-slide',
         wrapperClass: 'gallery-swiper-wrapper',
         direction: 'horizontal',
