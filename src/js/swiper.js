@@ -7,10 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.gallery-swiper', {
         modules: [Navigation],
         loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         breakpoints: {
             374: {
                 slidesPerView: 1.8,
@@ -21,10 +17,32 @@ document.addEventListener('DOMContentLoaded', function () {
                 spaceBetween: 24,
             },
         },
-  
-        loop: true,
         slideClass: 'gallery-swiper-slide',
         wrapperClass: 'gallery-swiper-wrapper',
         direction: 'horizontal',
     });
+    let swiperInstance = null;
+
+    function initSwiperIfNeeded() {
+        const shouldInit = window.innerWidth > 1439;
+    
+        if (shouldInit && !swiperInstance) {
+            swiperInstance = new Swiper('.rewiews-swiper', {
+                modules: [Navigation],
+                loop: true,
+                slidesPerView: 3.2,
+                spaceBetween: 24,
+                slideClass: 'rewiews-swiper-slide',
+                wrapperClass: 'rewiews-swiper-wrapper',
+                direction: 'horizontal',
+            });
+        } else if (!shouldInit && swiperInstance) {
+            swiperInstance.destroy(true, true);
+            swiperInstance = null;
+        }
+    }
+    
+    window.addEventListener('load', initSwiperIfNeeded);
+
+    window.addEventListener('resize', initSwiperIfNeeded);
 });

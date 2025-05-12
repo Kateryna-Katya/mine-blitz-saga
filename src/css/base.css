@@ -13,15 +13,15 @@ body{
   content: "";
   background-image: url("/img/background-mob.png");
   background-repeat: no-repeat;
-  background-position: top  center;
-    background-size: cover;
+  background-position: top center;
+    background-size: contain;
   position: absolute;
   z-index: 20;
   pointer-events: none;
   top:570px;
   left:0;
   width: 100%;
-  height: 100%
+  height: 5170px;
 }
 h2{
   font-family: "Potta One", sans-serif;
@@ -49,3 +49,4 @@ h2{
        height: 100%
 }
 }
+

@@ -178,3 +178,259 @@ margin-left: auto;
 margin-right: auto;
    } 
 }
+/* USER REVIEWS */
+.rewiews-title{
+    margin-bottom: 24px;
+}
+.rewiews-swiper-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.rewiews-swiper-slide{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #fff;
+        border-radius: 40px;
+            padding: 24px 16px;
+            max-width: 249px;
+            min-height: 244px;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+}
+.rewiews-author{
+    font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #000;
+        padding-bottom: 10px;
+        width: 203px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        margin-bottom: 20px;
+}
+.rewiews-text{
+    width: 203px;
+    margin-bottom: 10px;
+}
+.rewiews-img{
+width: 136px;
+height: 24px;
+margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 1439px) {
+    .rewiews-title {
+            margin-bottom: 40px;
+  }
+  .rewiews-swiper-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      width: 1000px;
+ 
+  }
+  .rewiews-container{
+    padding-left: 250px;
+  }
+  .rewiews-swiper-slide {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 4px 0 rgba(0, 0, 0, 0.25);
+      background: #fff;
+      border-radius: 40px;
+      padding: 24px 16px;
+      max-width: 249px;
+      height: 244px;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+/* FAQ */
+.faq-title {
+    margin-bottom: 24px;
+}
+
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    margin: 0 auto;
+
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+}
+
+.faq-acc-el-trigger {
+    background: inherit;
+    padding: 24px 10px;
+    width: 304px;
+    max-height: 72px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+         line-height: 1.5;
+        color: #000;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    transition: border-bottom 0.3s ease;
+}
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    min-width: 48px;
+    transition: transform 0.3s ease;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el-descr-frame {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 24px 10px;
+    width: 304px;
+    color: #000;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+.faq-acc-el.open .faq-acc-el-trigger {
+    border-bottom: none;
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+    opacity: 1;
+    background: inherit;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 24px 10px;
+    width: 304px;
+    margin-bottom: 16px; 
+ }
+ @media only screen and (min-width: 1439px) {
+    .faq-title {
+            margin-bottom: 40px;
+  }
+  .faq-acc {
+      width: 569px;
+  }
+  .faq-acc-el-trigger {
+      padding: 24px 10px;
+      width: 569px;
+    font-size: 20px;
+  }
+  .faq-acc-el-trigger {
+    width: 569px;
+      font-size: 20px;
+  }
+  .faq-acc-el.open .faq-acc-el-descr-frame {
+    width: 569px;
+   }
+ }
+ /* Boom or Bust? */
+ .boom-section{
+ position: relative;
+ }
+ .boom-section::before{
+    content: "";
+    background-image: url("/img/boom/bubbles-left-mob.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: contain;
+        position: absolute;
+            z-index: 25;
+            pointer-events: none;
+                bottom:-10px;
+                left: 0;
+                width: 100%;
+                height: 230px;
+ }
+ .boom-section::after {
+     content: "";
+     background-image: url("/img/boom/bubbles-right-mob.png");
+     background-repeat: no-repeat;
+     background-position: bottom right;
+     background-size: contain;
+    position: absolute;
+        z-index: 25;
+        pointer-events: none;
+        bottom: -10px;
+            right: 0;
+            width: 100%;
+            height: 230px;
+ }
+ .boom-title{
+    margin-bottom: 24px;
+ }
+ .boom-text{
+    width: 296px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ @media only screen and (min-width: 1439px) {
+    .boom-title {
+            margin-bottom: 40px;
+  }
+  .boom-section::before {
+      content: "";
+      background-image: url("/img/boom/bubbles-left-desk.png");
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      background-size: contain;
+      position: absolute;
+      z-index: 25;
+      pointer-events: none;
+      bottom: -80px;
+      left: 0;
+      width: 449px;
+      height: 400px;
+  }
+
+  .boom-section::after {
+      content: "";
+      background-image: url("/img/boom/bubbles-right-desk.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: contain;
+      position: absolute;
+      z-index: 25;
+      pointer-events: none;
+      bottom: -80px;
+      right: 0;
+      width: 449px;
+      height: 400px;
+  }
+  .boom-text {
+      width: 634px;
+    font-size: 20px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+ }
