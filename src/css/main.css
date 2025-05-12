@@ -148,3 +148,33 @@ transform: scale(1);
     
  }
 }
+/* HOW TO PLAY */
+.play-title{
+    margin-bottom: 24px;
+}
+.play-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.play-img{
+    width: 249px;
+        height: 249px;
+}
+@media only screen and (min-width: 1439px) {
+ .play-title {
+ margin-bottom: 40px;
+ }    
+ .play-wrapper {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ gap: 16px;
+ align-items: center;
+ justify-content: center;
+width: 795px;
+margin-left: auto;
+margin-right: auto;
+   } 
+}
