@@ -9,19 +9,20 @@ body{
 .body-background{
   position: relative;
 }
+
 .background::before{
   content: "";
   background-image: url("/img/background-mob.png");
   background-repeat: no-repeat;
   background-position: top center;
-    background-size: contain;
+    background-size: cover;
   position: absolute;
   z-index: 20;
   pointer-events: none;
-  top:570px;
+ top: 576px;
   left:0;
   width: 100%;
-  height: 5170px;
+  height: 4200px;
 }
 h2{
   font-family: "Potta One", sans-serif;
@@ -38,15 +39,15 @@ h2{
        content: "";
        background-image: url("/img/background-desk.png");
        background-repeat: no-repeat;
-       background-position: top 650px center;
+       background-position: top center;
        background-size: cover;
        position: absolute;
        z-index: 20;
        pointer-events: none;
-       top: 570px;
+       top: 1076px;
        left: 0;
        width: 100%;
-       height: 100%
+      height: 3370px;
 }
 }
 

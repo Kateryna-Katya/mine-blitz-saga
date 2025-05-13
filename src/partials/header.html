@@ -1,5 +1,54 @@
-<header class="header">
-  <div class="container">
-       </nav>
+<header class="header" id="site-header">
+  <div class="container header-container">
+    <img class="header-img" src="/img/header/dynamic-island-mob.png" srcset="/img/header/dynamic-island-mob.png 1x, /img/header/dynamic-island-mob@2x.png 2x"
+      alt="Mobile screen" loading="lazy" width="374" height="60" />
+      <div class="header-container">    
+      <button type="button" class="menu-button" aria-label="button for open menu">
+        <svg class="header-svg" width="24" height="24">
+          <use href="/img/sprite.svg#icon-burger1"></use>
+        </svg>
+      </button>
+
+      <nav class="nav ">
+        <img class="logo-img" src="/img/header/logo-desk.png"
+          srcset="/img/header/logo-desk.png 1x, /img/header/logo-desk@2x.png 2x" alt="Logo"
+          loading="lazy" width="53" height="53"/>
+        <ul class="navigation-list">
+          <li>
+            <a class="links" href="index.html#Game">Game Description</a>
+          </li>
+            <li>
+            <a class="links" href="index.html#Gallery">Gallery</a>
+          </li>
+  <li>
+            <a class="links" href="index.html#Play">How to Play</a>
+          </li>
+          <li>
+            <a class="links" href="index.html#Reviews">User Reviews</a>
+          </li>  
+        <li>
+            <a class="links" href="index.html#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <button class="modal-close-button" aria-label="close button">
+    <svg class="header-svg" width="24" height="24">
+      <use href="/img/sprite.svg#icon-cross1"></use>
+    </svg>
+  </button>
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#Game">Game Description</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Gallery">Gallery</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Play">How to Play</a></li>
+    <li><a class="menu-list-item" href="index.html#Reviews">User Reviews</a></li>
+    <li><a class="menu-list-item" href="index.html#FAQ">FAQ</a></li>
+  </ul>
+</div>

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             1439: {
                 slidesPerView: 4,
-                spaceBetween: 24,
+                spaceBetween: 10,
             },
         },
         slideClass: 'gallery-swiper-slide',
