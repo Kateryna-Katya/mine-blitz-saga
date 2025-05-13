@@ -2,6 +2,7 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./footer.css');
+@import url('./header.css');
 
 .terms-title{
   font-family: "Potta One", sans-serif;
@@ -10,6 +11,7 @@ font-size: 24px;
 line-height: 150%;
 color: #000;
 margin-bottom: 24px;
+margin-top: 90px;
 }
 .terms-first-text{
   font-family: "Montserrat", sans-serif;
@@ -57,6 +59,10 @@ margin-bottom: 24px;
   .terms-link{
     text-decoration: underline;
   }
+    .footer {
+      background: #fff;
+      background-image: none;
+    }
   @media only screen and (min-width:1439px) {
     .terms-title{
       font-size: 40px;
@@ -82,4 +88,9 @@ margin-bottom: 24px;
       font-size: 24px;
       margin-bottom: 24px;
     }
+        .footer {
+          width: 1045px;
+          margin-left: auto;
+          margin-right: auto;
+        }
   }

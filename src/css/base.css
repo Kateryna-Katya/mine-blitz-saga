@@ -31,6 +31,12 @@ h2{
     text-align: center;
     color: #000;
 }
+.policy-back{
+  background-image: url("/img/policy-back.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size:cover;
+}
 @media only screen and (min-width: 1439px) {
   h2 {
     font-size: 40px;

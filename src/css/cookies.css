@@ -2,6 +2,7 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./footer.css');
+@import url('./header.css');
 
 .cookies-link{
   text-decoration: underline;
@@ -29,6 +30,7 @@ font-size: 24px;
 line-height: 150%;
 color: #000;
 margin-bottom: 16px;
+margin-top: 90px;
 }
 .cookies-text{
   font-family: "Montserrat", sans-serif;
@@ -56,6 +58,10 @@ color: #000;
   list-style-type: disc;
   padding-left: 20px;
   margin-top: -16px;
+}
+.footer {
+  background: #fff;
+  background-image: none;
 }
 @media only screen and (min-width:1439px) {
   .cookies-title{
@@ -86,6 +92,10 @@ color: #000;
     font-size: 24px;
     margin-bottom: 24px;
   }
- 
+    .footer {
+      width: 1045px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
